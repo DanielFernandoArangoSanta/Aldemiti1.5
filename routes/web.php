@@ -44,6 +44,7 @@ Route::middleware([
             Route::controller(ProductoController::class)->group(function () {
                 Route::get('/index', 'index')->name('index');
                 Route::get('/crearproducto', 'create')->name('create');
+                Route::get('/pdf', 'pdf')->name('pdf');
                 Route::post('/guardar', 'store')->name('store');
                 Route::get('/{producto}/editar', 'edit')->name('edit');
                 Route::delete('/{producto}/eliminar', 'destroy')->name('delete');

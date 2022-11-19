@@ -36,6 +36,13 @@
                         </button>
                     </a>
                 </div>
+                <div class="col-sm-6">
+                    <a href="{{ route('inventario.pdf') }}">
+                        <button type="button" class="btn btn-block btn-warning">
+                            Exportar a PDF
+                        </button>
+                    </a>
+                </div>
             </div>
              <livewire:producto.tabla-productos :productos='$productos' />
         </div>
@@ -52,15 +59,7 @@
                     "info": true,
                     "autoWidth": false,
                     "responsive": true,
-                    "scrollX": true,
-                    dom :'Bfrtilp',
-                    buttons: [{
-                        extend: 'pdfHtml5',
-                        text: 'Exportar a PDF',
-                        titleAttr: 'Exportar a PDF',
-                        className :'btn bg-gradient-navy',
-                        title:'producto{{}}',
-                    }],     
+                    "scrollX": true,                         
                     language: {
                         url: '//cdn.datatables.net/plug-ins/1.12.1/i18n/es-MX.json'
                     }

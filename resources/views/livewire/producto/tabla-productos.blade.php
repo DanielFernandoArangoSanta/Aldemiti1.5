@@ -16,11 +16,7 @@
                         </div>
                     @endif
                     <div class="row">
-                        @if ($formularioIngreso || $formularioRetiro)
-                            <div class="col-md-9">
-                            @else
-                                <div class="col-md-12">
-                        @endif
+                        
                         <div wire:ignore>
                             <table id="tablaProductos" class="table table-bordered table-striped table-hover">
                                 <thead>

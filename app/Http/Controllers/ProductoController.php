@@ -20,6 +20,11 @@ class ProductoController extends Controller
         $productos = Producto::all();
         return view('inventario.index', compact('productos'));
     }
+    public function pdf()
+    {
+        $productos = Producto::all();
+        return view('inventario.pdf', compact('productos'));
+    }
 
     /**
      * Show the form for creating a new resource.
